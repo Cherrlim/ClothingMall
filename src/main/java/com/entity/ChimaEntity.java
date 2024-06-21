@@ -24,9 +24,6 @@ import com.baomidou.mybatisplus.enums.IdType;
 /**
  * 尺码
  * 数据库通用操作实体类（普通增删改查）
- * @author 
- * @email 
- * @date 2021-04-10 12:28:04
  */
 @TableName("chima")
 public class ChimaEntity<T> implements Serializable {
@@ -76,15 +73,11 @@ public class ChimaEntity<T> implements Serializable {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	/**
-	 * 设置：尺码
-	 */
+
 	public void setChima(String chima) {
 		this.chima = chima;
 	}
-	/**
-	 * 获取：尺码
-	 */
+
 	public String getChima() {
 		return chima;
 	}

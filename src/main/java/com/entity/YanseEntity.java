@@ -24,9 +24,6 @@ import com.baomidou.mybatisplus.enums.IdType;
 /**
  * 颜色
  * 数据库通用操作实体类（普通增删改查）
- * @author 
- * @email 
- * @date 2021-04-10 12:28:04
  */
 @TableName("yanse")
 public class YanseEntity<T> implements Serializable {
@@ -76,15 +73,11 @@ public class YanseEntity<T> implements Serializable {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	/**
-	 * 设置：颜色
-	 */
+
 	public void setYanse(String yanse) {
 		this.yanse = yanse;
 	}
-	/**
-	 * 获取：颜色
-	 */
+
 	public String getYanse() {
 		return yanse;
 	}

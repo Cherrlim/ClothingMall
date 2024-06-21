@@ -24,9 +24,6 @@ import com.baomidou.mybatisplus.enums.IdType;
 /**
  * 用户
  * 数据库通用操作实体类（普通增删改查）
- * @author 
- * @email 
- * @date 2021-04-10 12:28:03
  */
 @TableName("yonghu")
 public class YonghuEntity<T> implements Serializable {
@@ -112,87 +109,59 @@ public class YonghuEntity<T> implements Serializable {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	/**
-	 * 设置：用户名
-	 */
+
 	public void setYonghuming(String yonghuming) {
 		this.yonghuming = yonghuming;
 	}
-	/**
-	 * 获取：用户名
-	 */
+
 	public String getYonghuming() {
 		return yonghuming;
 	}
-	/**
-	 * 设置：密码
-	 */
+
 	public void setMima(String mima) {
 		this.mima = mima;
 	}
-	/**
-	 * 获取：密码
-	 */
+
 	public String getMima() {
 		return mima;
 	}
-	/**
-	 * 设置：姓名
-	 */
+
 	public void setXingming(String xingming) {
 		this.xingming = xingming;
 	}
-	/**
-	 * 获取：姓名
-	 */
+
 	public String getXingming() {
 		return xingming;
 	}
-	/**
-	 * 设置：头像
-	 */
+
 	public void setTouxiang(String touxiang) {
 		this.touxiang = touxiang;
 	}
-	/**
-	 * 获取：头像
-	 */
+
 	public String getTouxiang() {
 		return touxiang;
 	}
-	/**
-	 * 设置：性别
-	 */
+
 	public void setXingbie(String xingbie) {
 		this.xingbie = xingbie;
 	}
-	/**
-	 * 获取：性别
-	 */
+
 	public String getXingbie() {
 		return xingbie;
 	}
-	/**
-	 * 设置：联系电话
-	 */
+
 	public void setLianxidianhua(String lianxidianhua) {
 		this.lianxidianhua = lianxidianhua;
 	}
-	/**
-	 * 获取：联系电话
-	 */
+
 	public String getLianxidianhua() {
 		return lianxidianhua;
 	}
-	/**
-	 * 设置：余额
-	 */
+
 	public void setMoney(Float money) {
 		this.money = money;
 	}
-	/**
-	 * 获取：余额
-	 */
+
 	public Float getMoney() {
 		return money;
 	}

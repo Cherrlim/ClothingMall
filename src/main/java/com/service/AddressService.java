@@ -13,10 +13,6 @@ import com.entity.view.AddressView;
 
 /**
  * 地址
- *
- * @author 
- * @email 
- * @date 2021-04-10 12:28:04
  */
 public interface AddressService extends IService<AddressEntity> {
 

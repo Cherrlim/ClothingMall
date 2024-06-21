@@ -13,9 +13,6 @@ import java.io.Serializable;
  * 颜色
  * 后端返回视图实体辅助类   
  * （通常后端关联的表或者自定义的字段需要返回使用）
- * @author 
- * @email 
- * @date 2021-04-10 12:28:04
  */
 @TableName("yanse")
 public class YanseView  extends YanseEntity implements Serializable {
@@ -28,7 +25,6 @@ public class YanseView  extends YanseEntity implements Serializable {
  	try {
 			BeanUtils.copyProperties(this, yanseEntity);
 		} catch (IllegalAccessException | InvocationTargetException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
  		
