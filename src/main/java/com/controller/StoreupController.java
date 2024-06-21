@@ -36,13 +36,7 @@ import com.utils.MPUtil;
 import com.utils.CommonUtil;
 
 
-/**
- * 收藏表
- * 后端接口
- * @author 
- * @email 
- * @date 2021-04-10 12:28:04
- */
+
 @RestController
 @RequestMapping("/storeup")
 public class StoreupController {
