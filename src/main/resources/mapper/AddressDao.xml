@@ -3,7 +3,6 @@
 
 <mapper namespace="com.dao.AddressDao">
 
-	<!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.entity.AddressEntity" id="addressMap">
         <result property="userid" column="userid"/>
         <result property="address" column="address"/>
