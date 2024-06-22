@@ -79,6 +79,8 @@ public class ChatController {
         return R.ok().put("data", page);
     }
 
+
+
 	/**
      * 列表
      */
@@ -140,10 +142,9 @@ public class ChatController {
         chatService.insert(chat);
         return R.ok();
     }
-    
-    /**
-     * 前端保存
-     */
+
+
+
     @RequestMapping("/add")
     public R add(@RequestBody ChatEntity chat, HttpServletRequest request){
     	chat.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
