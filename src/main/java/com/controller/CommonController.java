@@ -61,13 +61,7 @@ public class CommonController{
 		return R.ok().put("data", map);
 	}
 	
-	/**
-	 * 人脸比对
-	 * 
-	 * @param face1 人脸1
-	 * @param face2 人脸2
-	 * @return
-	 */
+
 	@RequestMapping("/matchFace")
 	public R matchFace(String face1, String face2) {
 		if(client==null) {
