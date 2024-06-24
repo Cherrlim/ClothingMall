@@ -39,9 +39,6 @@ import com.utils.CommonUtil;
 /**
  * 订单评价
  * 后端接口
- * @author 
- * @email 
- * @date 2021-04-10 12:28:04
  */
 @RestController
 @RequestMapping("/dingdanpingjia")
