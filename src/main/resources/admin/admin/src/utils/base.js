@@ -1,10 +1,10 @@
 const base = {
     get() {
         return {
-            url : "http://localhost:8080/springboot4r3y8/",
-            name: "springboot4r3y8",
+            url : "http://localhost:8080/clothingmall/",
+            name: "clothingmall",
             // 退出到首页链接
-            indexUrl: 'http://localhost:8080/springboot4r3y8/front/index.html'
+            indexUrl: 'http://localhost:8080/clothingmall/front/index.html'
         };
     },
     getProjectName(){

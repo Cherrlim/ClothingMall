@@ -1,6 +1,6 @@
 /*
 SQLyog Ultimate v11.3 (64 bit)
-MySQL - 5.7.32-log : Database - springboot4r3y8
+MySQL - 5.7.32-log : Database - clothingmall
 *********************************************************************
 */
 
@@ -13,9 +13,9 @@ MySQL - 5.7.32-log : Database - springboot4r3y8
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`springboot4r3y8` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`clothingmall` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `springboot4r3y8`;
+USE `clothingmall`;
 
 /*Table structure for table `address` */
 
@@ -132,7 +132,7 @@ CREATE TABLE `dingdanpingjia` (
 
 /*Data for the table `dingdanpingjia` */
 
-insert  into `dingdanpingjia`(`id`,`addtime`,`dingdanbianhao`,`shangpinmingcheng`,`shangpinfenlei`,`pingfen`,`tianjiatupian`,`pingjianeirong`,`pingjiariqi`,`yonghuming`,`lianxidianhua`,`sfsh`,`shhf`) values (61,'2024-04-10 12:28:34','订单编号1','商品名称1','商品分类1','1','http://localhost:8080/springboot4r3y8/upload/1618033242977.jpg','评价内容1','2024-04-10','用户名1','联系电话1','是',''),(62,'2024-04-10 12:28:34','订单编号2','商品名称2','商品分类2','1','http://localhost:8080/springboot4r3y8/upload/1618033251015.jpg','评价内容2','2024-04-10','用户名2','联系电话2','是',''),(63,'2024-04-10 12:28:34','订单编号3','商品名称3','商品分类3','1','http://localhost:8080/springboot4r3y8/upload/1618033258115.jpg','评价内容3','2024-04-10','用户名3','联系电话3','是',''),(64,'2024-04-10 12:28:34','订单编号4','商品名称4','商品分类4','1','http://localhost:8080/springboot4r3y8/upload/1618033265836.jpg','评价内容4','2024-04-10','用户名4','联系电话4','是',''),(65,'2024-04-10 12:28:34','订单编号5','商品名称5','商品分类5','1','http://localhost:8080/springboot4r3y8/upload/1618033275971.jpg','评价内容5','2024-04-10','用户名5','联系电话5','是',''),(66,'2024-04-10 12:28:34','订单编号6','商品名称6','商品分类6','1','http://localhost:8080/springboot4r3y8/upload/1618033283168.jpg','评价内容6','2024-04-10','用户名6','联系电话6','是',''),(1618034150009,'2024-04-10 13:55:49','202441013535068581766','歌莉娅2024年春新款卫衣','卫衣','5','http://localhost:8080/springboot4r3y8/upload/1618034138962.jpg','材质款式都不错','2024-04-10','1','12312312312','是','感谢支持');
+insert  into `dingdanpingjia`(`id`,`addtime`,`dingdanbianhao`,`shangpinmingcheng`,`shangpinfenlei`,`pingfen`,`tianjiatupian`,`pingjianeirong`,`pingjiariqi`,`yonghuming`,`lianxidianhua`,`sfsh`,`shhf`) values (61,'2024-04-10 12:28:34','订单编号1','商品名称1','商品分类1','1','http://localhost:8080/clothingmall/upload/1618033242977.jpg','评价内容1','2024-04-10','用户名1','联系电话1','是',''),(62,'2024-04-10 12:28:34','订单编号2','商品名称2','商品分类2','1','http://localhost:8080/clothingmall/upload/1618033251015.jpg','评价内容2','2024-04-10','用户名2','联系电话2','是',''),(63,'2024-04-10 12:28:34','订单编号3','商品名称3','商品分类3','1','http://localhost:8080/clothingmall/upload/1618033258115.jpg','评价内容3','2024-04-10','用户名3','联系电话3','是',''),(64,'2024-04-10 12:28:34','订单编号4','商品名称4','商品分类4','1','http://localhost:8080/clothingmall/upload/1618033265836.jpg','评价内容4','2024-04-10','用户名4','联系电话4','是',''),(65,'2024-04-10 12:28:34','订单编号5','商品名称5','商品分类5','1','http://localhost:8080/clothingmall/upload/1618033275971.jpg','评价内容5','2024-04-10','用户名5','联系电话5','是',''),(66,'2024-04-10 12:28:34','订单编号6','商品名称6','商品分类6','1','http://localhost:8080/clothingmall/upload/1618033283168.jpg','评价内容6','2024-04-10','用户名6','联系电话6','是',''),(1618034150009,'2024-04-10 13:55:49','202441013535068581766','歌莉娅2024年春新款卫衣','卫衣','5','http://localhost:8080/clothingmall/upload/1618034138962.jpg','材质款式都不错','2024-04-10','1','12312312312','是','感谢支持');
 
 /*Table structure for table `discussshangpinxinxi` */
 
@@ -169,7 +169,7 @@ CREATE TABLE `news` (
 
 /*Data for the table `news` */
 
-insert  into `news`(`id`,`addtime`,`title`,`introduction`,`picture`,`content`) values (121,'2024-04-10 12:28:34','标题1','简介1','http://localhost:8080/springboot4r3y8/upload/1618033301322.jpg','<p>内容1</p>'),(122,'2024-04-10 12:28:34','标题2','简介2','http://localhost:8080/springboot4r3y8/upload/1618033309606.jpg','<p>内容2</p>'),(123,'2024-04-10 12:28:34','标题3','简介3','http://localhost:8080/springboot4r3y8/upload/1618033317928.jpg','<p>内容3</p>'),(124,'2024-04-10 12:28:34','标题4','简介4','http://localhost:8080/springboot4r3y8/upload/1618033328182.jpg','<p>内容4</p>'),(125,'2024-04-10 12:28:34','标题5','简介5','http://localhost:8080/springboot4r3y8/upload/1618033335925.jpg','<p>内容5</p>'),(126,'2024-04-10 12:28:34','标题6','简介6','http://localhost:8080/springboot4r3y8/upload/1618033347394.jpg','<p>内容6</p>'),(1618033809619,'2024-04-10 13:50:09','服装优惠资讯','服装优惠活动','http://localhost:8080/springboot4r3y8/upload/1618033781471.jpg','<p>全场服装参与618优惠活动，具体详见商品详情页</p><p><img src=\"http://localhost:8080/springboot4r3y8/upload/1618033807231.jpg\"></p>');
+insert  into `news`(`id`,`addtime`,`title`,`introduction`,`picture`,`content`) values (121,'2024-04-10 12:28:34','标题1','简介1','http://localhost:8080/clothingmall/upload/1618033301322.jpg','<p>内容1</p>'),(122,'2024-04-10 12:28:34','标题2','简介2','http://localhost:8080/clothingmall/upload/1618033309606.jpg','<p>内容2</p>'),(123,'2024-04-10 12:28:34','标题3','简介3','http://localhost:8080/clothingmall/upload/1618033317928.jpg','<p>内容3</p>'),(124,'2024-04-10 12:28:34','标题4','简介4','http://localhost:8080/clothingmall/upload/1618033328182.jpg','<p>内容4</p>'),(125,'2024-04-10 12:28:34','标题5','简介5','http://localhost:8080/clothingmall/upload/1618033335925.jpg','<p>内容5</p>'),(126,'2024-04-10 12:28:34','标题6','简介6','http://localhost:8080/clothingmall/upload/1618033347394.jpg','<p>内容6</p>'),(1618033809619,'2024-04-10 13:50:09','服装优惠资讯','服装优惠活动','http://localhost:8080/clothingmall/upload/1618033781471.jpg','<p>全场服装参与618优惠活动，具体详见商品详情页</p><p><img src=\"http://localhost:8080/clothingmall/upload/1618033807231.jpg\"></p>');
 
 /*Table structure for table `orders` */
 
@@ -200,7 +200,7 @@ CREATE TABLE `orders` (
 
 /*Data for the table `orders` */
 
-insert  into `orders`(`id`,`addtime`,`orderid`,`tablename`,`userid`,`goodid`,`goodname`,`picture`,`buynumber`,`price`,`discountprice`,`total`,`discounttotal`,`type`,`status`,`address`,`tel`,`consignee`) values (1618034031024,'2024-04-10 13:53:50','202441013535068581766','shangpinxinxi',1618033830452,1618033737545,'歌莉娅2024年春新款卫衣','http://localhost:8080/springboot4r3y8/upload/1618033717266.jpg',2,399,399,798,798,1,'已完成','广东省佛山市禅城区祖庙街道季华五路金海广场','12312312312','陈一');
+insert  into `orders`(`id`,`addtime`,`orderid`,`tablename`,`userid`,`goodid`,`goodname`,`picture`,`buynumber`,`price`,`discountprice`,`total`,`discounttotal`,`type`,`status`,`address`,`tel`,`consignee`) values (1618034031024,'2024-04-10 13:53:50','202441013535068581766','shangpinxinxi',1618033830452,1618033737545,'歌莉娅2024年春新款卫衣','http://localhost:8080/clothingmall/upload/1618033717266.jpg',2,399,399,798,798,1,'已完成','广东省佛山市禅城区祖庙街道季华五路金海广场','12312312312','陈一');
 
 /*Table structure for table `shangpinfenlei` */
 
@@ -240,7 +240,7 @@ CREATE TABLE `shangpinxinxi` (
 
 /*Data for the table `shangpinxinxi` */
 
-insert  into `shangpinxinxi`(`id`,`addtime`,`shangpinmingcheng`,`shangpinfenlei`,`tupian`,`pinpai`,`yanse`,`chima`,`shangpinxiangqing`,`clicktime`,`clicknum`,`price`) values (51,'2024-04-10 12:28:34','商品名称1','商品分类1','http://localhost:8080/springboot4r3y8/upload/1618033185354.jpg','品牌1','颜色1','尺码1','<p>商品详情1</p>','2024-04-10 13:39:31',2,99.9),(52,'2024-04-10 12:28:34','商品名称2','商品分类2','http://localhost:8080/springboot4r3y8/upload/1618033193696.jpg','品牌2','颜色2','尺码2','<p>商品详情2</p>','2024-04-10 13:39:48',4,99.9),(53,'2024-04-10 12:28:34','商品名称3','商品分类3','http://localhost:8080/springboot4r3y8/upload/1618033203043.jpg','品牌3','颜色3','尺码3','<p>商品详情3</p>','2024-04-10 13:39:58',4,99.9),(54,'2024-04-10 12:28:34','商品名称4','商品分类4','http://localhost:8080/springboot4r3y8/upload/1618033213232.jpg','品牌4','颜色4','尺码4','<p>商品详情4</p>','2024-04-10 13:40:07',5,99.9),(55,'2024-04-10 12:28:34','商品名称5','商品分类5','http://localhost:8080/springboot4r3y8/upload/1618033222085.jpg','品牌5','颜色5','尺码5','<p>商品详情5</p>','2024-04-10 13:51:42',12,99.9),(56,'2024-04-10 12:28:34','商品名称6','商品分类6','http://localhost:8080/springboot4r3y8/upload/1618033233265.jpg','品牌6','颜色6','尺码6','<p>商品详情6</p>','2024-04-10 13:53:22',12,99.9),(1618033737545,'2024-04-10 13:48:56','歌莉娅2024年春新款卫衣','卫衣','http://localhost:8080/springboot4r3y8/upload/1618033717266.jpg','歌莉娅','浅蓝色','XS(160/80A)','<p>商品介绍</p><p><img src=\"http://localhost:8080/springboot4r3y8/upload/1618033735146.jpg\"></p>','2024-04-10 13:53:50',4,399);
+insert  into `shangpinxinxi`(`id`,`addtime`,`shangpinmingcheng`,`shangpinfenlei`,`tupian`,`pinpai`,`yanse`,`chima`,`shangpinxiangqing`,`clicktime`,`clicknum`,`price`) values (51,'2024-04-10 12:28:34','商品名称1','商品分类1','http://localhost:8080/clothingmall/upload/1618033185354.jpg','品牌1','颜色1','尺码1','<p>商品详情1</p>','2024-04-10 13:39:31',2,99.9),(52,'2024-04-10 12:28:34','商品名称2','商品分类2','http://localhost:8080/clothingmall/upload/1618033193696.jpg','品牌2','颜色2','尺码2','<p>商品详情2</p>','2024-04-10 13:39:48',4,99.9),(53,'2024-04-10 12:28:34','商品名称3','商品分类3','http://localhost:8080/clothingmall/upload/1618033203043.jpg','品牌3','颜色3','尺码3','<p>商品详情3</p>','2024-04-10 13:39:58',4,99.9),(54,'2024-04-10 12:28:34','商品名称4','商品分类4','http://localhost:8080/clothingmall/upload/1618033213232.jpg','品牌4','颜色4','尺码4','<p>商品详情4</p>','2024-04-10 13:40:07',5,99.9),(55,'2024-04-10 12:28:34','商品名称5','商品分类5','http://localhost:8080/clothingmall/upload/1618033222085.jpg','品牌5','颜色5','尺码5','<p>商品详情5</p>','2024-04-10 13:51:42',12,99.9),(56,'2024-04-10 12:28:34','商品名称6','商品分类6','http://localhost:8080/clothingmall/upload/1618033233265.jpg','品牌6','颜色6','尺码6','<p>商品详情6</p>','2024-04-10 13:53:22',12,99.9),(1618033737545,'2024-04-10 13:48:56','歌莉娅2024年春新款卫衣','卫衣','http://localhost:8080/clothingmall/upload/1618033717266.jpg','歌莉娅','浅蓝色','XS(160/80A)','<p>商品介绍</p><p><img src=\"http://localhost:8080/clothingmall/upload/1618033735146.jpg\"></p>','2024-04-10 13:53:50',4,399);
 
 /*Table structure for table `storeup` */
 
@@ -332,7 +332,7 @@ CREATE TABLE `yonghu` (
 
 /*Data for the table `yonghu` */
 
-insert  into `yonghu`(`id`,`addtime`,`yonghuming`,`mima`,`xingming`,`touxiang`,`xingbie`,`lianxidianhua`,`money`) values (11,'2024-04-10 12:28:34','用户1','123456','姓名1','http://localhost:8080/springboot4r3y8/upload/yonghu_touxiang1.jpg','男','13823888881',100),(12,'2024-04-10 12:28:34','用户2','123456','姓名2','http://localhost:8080/springboot4r3y8/upload/yonghu_touxiang2.jpg','男','13823888882',100),(13,'2024-04-10 12:28:34','用户3','123456','姓名3','http://localhost:8080/springboot4r3y8/upload/yonghu_touxiang3.jpg','男','13823888883',100),(14,'2024-04-10 12:28:34','用户4','123456','姓名4','http://localhost:8080/springboot4r3y8/upload/yonghu_touxiang4.jpg','男','13823888884',100),(15,'2024-04-10 12:28:34','用户5','123456','姓名5','http://localhost:8080/springboot4r3y8/upload/yonghu_touxiang5.jpg','男','13823888885',100),(16,'2024-04-10 12:28:34','用户6','123456','姓名6','http://localhost:8080/springboot4r3y8/upload/yonghu_touxiang6.jpg','男','13823888886',100),(1618033830452,'2024-04-10 13:50:30','1','11','陈一','http://localhost:8080/springboot4r3y8/upload/1618033847310.jpg','女','12312312312',1202);
+insert  into `yonghu`(`id`,`addtime`,`yonghuming`,`mima`,`xingming`,`touxiang`,`xingbie`,`lianxidianhua`,`money`) values (11,'2024-04-10 12:28:34','用户1','123456','姓名1','http://localhost:8080/clothingmall/upload/yonghu_touxiang1.jpg','男','13823888881',100),(12,'2024-04-10 12:28:34','用户2','123456','姓名2','http://localhost:8080/clothingmall/upload/yonghu_touxiang2.jpg','男','13823888882',100),(13,'2024-04-10 12:28:34','用户3','123456','姓名3','http://localhost:8080/clothingmall/upload/yonghu_touxiang3.jpg','男','13823888883',100),(14,'2024-04-10 12:28:34','用户4','123456','姓名4','http://localhost:8080/clothingmall/upload/yonghu_touxiang4.jpg','男','13823888884',100),(15,'2024-04-10 12:28:34','用户5','123456','姓名5','http://localhost:8080/clothingmall/upload/yonghu_touxiang5.jpg','男','13823888885',100),(16,'2024-04-10 12:28:34','用户6','123456','姓名6','http://localhost:8080/clothingmall/upload/yonghu_touxiang6.jpg','男','13823888886',100),(1618033830452,'2024-04-10 13:50:30','1','11','陈一','http://localhost:8080/clothingmall/upload/1618033847310.jpg','女','12312312312',1202);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;

@@ -62,7 +62,7 @@ var indexNav = [
 },
 ]
 
-var adminurl =  "http://localhost:8080/springboot4r3y8/admin/dist/index.html";
+var adminurl =  "http://localhost:8080/clothingmall/admin/dist/index.html";
 
 var cartFlag = false
 
