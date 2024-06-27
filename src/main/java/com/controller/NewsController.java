@@ -24,10 +24,10 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.annotation.IgnoreAuth;
 
-import com.entity.DingdanpingjiaEntity;
-import com.entity.view.DingdanpingjiaView;
+import com.entity.NewsEntity;
+import com.entity.view.NewsView;
 
-import com.service.DingdanpingjiaService;
+import com.service.NewsService;
 import com.service.TokenService;
 import com.utils.PageUtils;
 import com.utils.R;
@@ -36,15 +36,12 @@ import com.utils.MPUtil;
 import com.utils.CommonUtil;
 
 
-/**
- * 订单评价
- * 后端接口
- */
+
 @RestController
-@RequestMapping("/dingdanpingjia")
-public class DingdanpingjiaController {
+@RequestMapping("/news")
+public class NewsController {
     @Autowired
-    private DingdanpingjiaService dingdanpingjiaService;
+    private NewsService newsService;
     
 
 
@@ -52,14 +49,10 @@ public class DingdanpingjiaController {
      * 后端列表
      */
     @RequestMapping("/page")
-    public R page(@RequestParam Map<String, Object> params,DingdanpingjiaEntity dingdanpingjia,
+    public R page(@RequestParam Map<String, Object> params,NewsEntity news,
 		HttpServletRequest request){
-		String tableName = request.getSession().getAttribute("tableName").toString();
-		if(tableName.equals("yonghu")) {
-			dingdanpingjia.setYonghuming((String)request.getSession().getAttribute("username"));
-		}
-        EntityWrapper<DingdanpingjiaEntity> ew = new EntityWrapper<DingdanpingjiaEntity>();
-		PageUtils page = dingdanpingjiaService.queryPage(params, MPUtil.sort(MPUtil.between(MPUtil.likeOrEq(ew, dingdanpingjia), params), params));
+        EntityWrapper<NewsEntity> ew = new EntityWrapper<NewsEntity>();
+		PageUtils page = newsService.queryPage(params, MPUtil.sort(MPUtil.between(MPUtil.likeOrEq(ew, news), params), params));
 
         return R.ok().put("data", page);
     }
@@ -67,10 +60,11 @@ public class DingdanpingjiaController {
     /**
      * 前端列表
      */
+	@IgnoreAuth
     @RequestMapping("/list")
-    public R list(@RequestParam Map<String, Object> params,DingdanpingjiaEntity dingdanpingjia, HttpServletRequest request){
-        EntityWrapper<DingdanpingjiaEntity> ew = new EntityWrapper<DingdanpingjiaEntity>();
-		PageUtils page = dingdanpingjiaService.queryPage(params, MPUtil.sort(MPUtil.between(MPUtil.likeOrEq(ew, dingdanpingjia), params), params));
+    public R list(@RequestParam Map<String, Object> params,NewsEntity news, HttpServletRequest request){
+        EntityWrapper<NewsEntity> ew = new EntityWrapper<NewsEntity>();
+		PageUtils page = newsService.queryPage(params, MPUtil.sort(MPUtil.between(MPUtil.likeOrEq(ew, news), params), params));
         return R.ok().put("data", page);
     }
 
@@ -78,21 +72,21 @@ public class DingdanpingjiaController {
      * 列表
      */
     @RequestMapping("/lists")
-    public R list( DingdanpingjiaEntity dingdanpingjia){
-       	EntityWrapper<DingdanpingjiaEntity> ew = new EntityWrapper<DingdanpingjiaEntity>();
-      	ew.allEq(MPUtil.allEQMapPre( dingdanpingjia, "dingdanpingjia")); 
-        return R.ok().put("data", dingdanpingjiaService.selectListView(ew));
+    public R list( NewsEntity news){
+       	EntityWrapper<NewsEntity> ew = new EntityWrapper<NewsEntity>();
+      	ew.allEq(MPUtil.allEQMapPre( news, "news")); 
+        return R.ok().put("data", newsService.selectListView(ew));
     }
 
 	 /**
      * 查询
      */
     @RequestMapping("/query")
-    public R query(DingdanpingjiaEntity dingdanpingjia){
-        EntityWrapper< DingdanpingjiaEntity> ew = new EntityWrapper< DingdanpingjiaEntity>();
- 		ew.allEq(MPUtil.allEQMapPre( dingdanpingjia, "dingdanpingjia")); 
-		DingdanpingjiaView dingdanpingjiaView =  dingdanpingjiaService.selectView(ew);
-		return R.ok("查询订单评价成功").put("data", dingdanpingjiaView);
+    public R query(NewsEntity news){
+        EntityWrapper< NewsEntity> ew = new EntityWrapper< NewsEntity>();
+ 		ew.allEq(MPUtil.allEQMapPre( news, "news")); 
+		NewsView newsView =  newsService.selectView(ew);
+		return R.ok("查询商品资讯成功").put("data", newsView);
     }
 	
     /**
@@ -100,17 +94,18 @@ public class DingdanpingjiaController {
      */
     @RequestMapping("/info/{id}")
     public R info(@PathVariable("id") Long id){
-        DingdanpingjiaEntity dingdanpingjia = dingdanpingjiaService.selectById(id);
-        return R.ok().put("data", dingdanpingjia);
+        NewsEntity news = newsService.selectById(id);
+        return R.ok().put("data", news);
     }
 
     /**
      * 前端详情
      */
+	@IgnoreAuth
     @RequestMapping("/detail/{id}")
     public R detail(@PathVariable("id") Long id){
-        DingdanpingjiaEntity dingdanpingjia = dingdanpingjiaService.selectById(id);
-        return R.ok().put("data", dingdanpingjia);
+        NewsEntity news = newsService.selectById(id);
+        return R.ok().put("data", news);
     }
     
 
@@ -120,10 +115,10 @@ public class DingdanpingjiaController {
      * 后端保存
      */
     @RequestMapping("/save")
-    public R save(@RequestBody DingdanpingjiaEntity dingdanpingjia, HttpServletRequest request){
-    	dingdanpingjia.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
-    	//ValidatorUtils.validateEntity(dingdanpingjia);
-        dingdanpingjiaService.insert(dingdanpingjia);
+    public R save(@RequestBody NewsEntity news, HttpServletRequest request){
+    	news.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
+    	//ValidatorUtils.validateEntity(news);
+        newsService.insert(news);
         return R.ok();
     }
     
@@ -131,10 +126,10 @@ public class DingdanpingjiaController {
      * 前端保存
      */
     @RequestMapping("/add")
-    public R add(@RequestBody DingdanpingjiaEntity dingdanpingjia, HttpServletRequest request){
-    	dingdanpingjia.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
-    	//ValidatorUtils.validateEntity(dingdanpingjia);
-        dingdanpingjiaService.insert(dingdanpingjia);
+    public R add(@RequestBody NewsEntity news, HttpServletRequest request){
+    	news.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());
+    	//ValidatorUtils.validateEntity(news);
+        newsService.insert(news);
         return R.ok();
     }
 
@@ -142,9 +137,9 @@ public class DingdanpingjiaController {
      * 修改
      */
     @RequestMapping("/update")
-    public R update(@RequestBody DingdanpingjiaEntity dingdanpingjia, HttpServletRequest request){
-        //ValidatorUtils.validateEntity(dingdanpingjia);
-        dingdanpingjiaService.updateById(dingdanpingjia);//全部更新
+    public R update(@RequestBody NewsEntity news, HttpServletRequest request){
+        //ValidatorUtils.validateEntity(news);
+        newsService.updateById(news);//全部更新
         return R.ok();
     }
     
@@ -154,7 +149,7 @@ public class DingdanpingjiaController {
      */
     @RequestMapping("/delete")
     public R delete(@RequestBody Long[] ids){
-        dingdanpingjiaService.deleteBatchIds(Arrays.asList(ids));
+        newsService.deleteBatchIds(Arrays.asList(ids));
         return R.ok();
     }
     
@@ -188,7 +183,7 @@ public class DingdanpingjiaController {
 			}
 		}
 		
-		Wrapper<DingdanpingjiaEntity> wrapper = new EntityWrapper<DingdanpingjiaEntity>();
+		Wrapper<NewsEntity> wrapper = new EntityWrapper<NewsEntity>();
 		if(map.get("remindstart")!=null) {
 			wrapper.ge(columnName, map.get("remindstart"));
 		}
@@ -196,12 +191,8 @@ public class DingdanpingjiaController {
 			wrapper.le(columnName, map.get("remindend"));
 		}
 
-		String tableName = request.getSession().getAttribute("tableName").toString();
-		if(tableName.equals("yonghu")) {
-			wrapper.eq("yonghuming", (String)request.getSession().getAttribute("username"));
-		}
 
-		int count = dingdanpingjiaService.selectCount(wrapper);
+		int count = newsService.selectCount(wrapper);
 		return R.ok().put("count", count);
 	}
 	
