@@ -40,8 +40,7 @@ import com.utils.CommonUtil;
  * 在线客服
  * 后端接口
  * @author 
- * @email 
- * @date 2021-04-10 12:28:04
+ * @email
  */
 @RestController
 @RequestMapping("/chat")
@@ -78,8 +77,6 @@ public class ChatController {
 		PageUtils page = chatService.queryPage(params, MPUtil.sort(MPUtil.between(MPUtil.likeOrEq(ew, chat), params), params));
         return R.ok().put("data", page);
     }
-
-
 
 	/**
      * 列表
@@ -142,9 +139,10 @@ public class ChatController {
         chatService.insert(chat);
         return R.ok();
     }
-
-
-
+    
+    /**
+     * 前端保存
+     */
     @RequestMapping("/add")
     public R add(@RequestBody ChatEntity chat, HttpServletRequest request){
     	chat.setId(new Date().getTime()+new Double(Math.floor(Math.random()*1000)).longValue());

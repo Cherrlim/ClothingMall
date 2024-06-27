@@ -1,6 +1,6 @@
 package com.utils;
 
-public class JQPageInfo {
+public class JQPageInfo{
 	private Integer page;
 	
 	private Integer limit;

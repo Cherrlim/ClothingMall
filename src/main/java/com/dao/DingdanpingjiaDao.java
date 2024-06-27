@@ -15,8 +15,7 @@ import com.entity.view.DingdanpingjiaView;
  * 订单评价
  * 
  * @author 
- * @email 
- * @date 2021-04-10 12:28:04
+ * @email
  */
 public interface DingdanpingjiaDao extends BaseMapper<DingdanpingjiaEntity> {
 	

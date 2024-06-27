@@ -13,6 +13,9 @@ import com.entity.view.StoreupView;
 
 /**
  * 收藏表
+ *
+ * @author 
+ * @email
  */
 public interface StoreupService extends IService<StoreupEntity> {
 

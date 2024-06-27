@@ -38,12 +38,17 @@ import com.utils.CommonUtil;
 
 /**
  * 商品信息评论表
+ * 后端接口
+ * @author 
+ * @email
  */
 @RestController
 @RequestMapping("/discussshangpinxinxi")
 public class DiscussshangpinxinxiController {
     @Autowired
     private DiscussshangpinxinxiService discussshangpinxinxiService;
+    
+
 
     /**
      * 后端列表

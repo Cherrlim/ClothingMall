@@ -9,7 +9,13 @@ import java.lang.reflect.InvocationTargetException;
 import java.io.Serializable;
  
 
-
+/**
+ * 商品分类
+ * 后端返回视图实体辅助类   
+ * （通常后端关联的表或者自定义的字段需要返回使用）
+ * @author 
+ * @email
+ */
 @TableName("shangpinfenlei")
 public class ShangpinfenleiView  extends ShangpinfenleiEntity implements Serializable {
 	private static final long serialVersionUID = 1L;

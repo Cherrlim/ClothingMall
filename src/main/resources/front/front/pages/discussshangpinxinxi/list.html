@@ -47,11 +47,11 @@
 		border-style: solid;
 		border-color: rgba(0, 0, 0, 0.3);
 		border-radius: 50px;
-		background-color: rgba(0, 112, 126, 1);
+		/*background-color: rgba(0, 112, 126, 1);*/
+		background-color: #C2CFB2;
 		box-shadow: 0 0 0px rgba(15,98,108);
 	}
 
-	// 列表
 	.recommend {
 		padding: 10px 0;
 		display: flex;
@@ -230,10 +230,10 @@ width: 100%;
 		flex: 0 0 33.33%;
 	}
 
-	.index-pv1 .animation-box:hover {
-		transform: perspective(5000px) translate3d(20px, 0px, 0px) scale(1.0) rotate(0deg) skew(10deg,0deg);
-		transition: all 0.5s;
-	}
+	/*.index-pv1 .animation-box:hover {*/
+	/*	transform: perspective(5000px) translate3d(20px, 0px, 0px) scale(1.0) rotate(0deg) skew(10deg,0deg);*/
+	/*	transition: all 0.5s;*/
+	/*}*/
   
   .layui-laypage .layui-laypage-count {
     padding: 0 10px;
@@ -255,7 +255,7 @@ width: 100%;
     </div>
 	<div class="recommend index-pv1" :style='{"padding":"10px 0 10px 0","boxShadow":"0 0 5px rgba(51, 140, 145, 1)","margin":"10px 0 0 0","borderColor":"rgba(255, 204, 0, 1)","backgroundColor":"rgba(255, 255, 255, 1)","borderRadius":"20px","borderWidth":"0","borderStyle":"solid"}'>
 		<div class="box" style='width:80%'>
-	    <div class="title" :style='{"padding":"10px 0px 10px 0","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"10px 0 10px 0","borderColor":"rgba(38, 155, 158, 1)","backgroundColor":"rgba(38, 155, 158, 1)","borderRadius":"4px","borderWidth":"2px","borderStyle":"solid","justifyContent":"space-between","height":"54px"}'>
+	    <div class="title" :style='{"padding":"10px 0px 10px 0","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"10px 0 10px 0","borderColor":"#C2CFB2","backgroundColor":"#C2CFB2","borderRadius":"4px","borderWidth":"2px","borderStyle":"solid","justifyContent":"space-between","height":"54px"}'>
 	      <span :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","borderColor":"rgba(255,0,0,1)","backgroundColor":"rgba(0,0,0,0)","color":"rgba(255, 255, 255, 1)","borderRadius":"0 0 2px 0","borderWidth":"0","fontSize":"18px","borderStyle":"solid"}'>商品信息评论表</span><span :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(255,0,0,0)","borderColor":"rgba(0,0,0,0)","backgroundColor":"rgba(0,0,0,0)","color":"rgba(255, 255, 255, 1)","borderRadius":"0","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}'>您现在的位置：商品信息评论表</span>
 	    </div>
 		<form class="layui-form filter" :style='{"padding":"0 10px","boxShadow":"0 0 0px rgba(255,0,0,.8)","margin":"10px 0 10px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(255, 255, 255, 0.53)","borderRadius":"0px","alignItems":"flex-start","borderWidth":"2px","borderStyle":"none none solid none ","justifyContent":"flex-end","height":"64px"}'>

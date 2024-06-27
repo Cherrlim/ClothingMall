@@ -14,8 +14,7 @@ import java.io.Serializable;
  * 后端返回视图实体辅助类   
  * （通常后端关联的表或者自定义的字段需要返回使用）
  * @author 
- * @email 
- * @date 2021-04-10 12:28:04
+ * @email
  */
 @TableName("dingdanpingjia")
 public class DingdanpingjiaView  extends DingdanpingjiaEntity implements Serializable {

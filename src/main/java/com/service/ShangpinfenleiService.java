@@ -11,7 +11,12 @@ import org.apache.ibatis.annotations.Param;
 import com.entity.view.ShangpinfenleiView;
 
 
-
+/**
+ * 商品分类
+ *
+ * @author 
+ * @email
+ */
 public interface ShangpinfenleiService extends IService<ShangpinfenleiEntity> {
 
     PageUtils queryPage(Map<String, Object> params);

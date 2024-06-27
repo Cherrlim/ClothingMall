@@ -13,6 +13,9 @@ import com.entity.view.DiscussshangpinxinxiView;
 
 /**
  * 商品信息评论表
+ * 
+ * @author 
+ * @email
  */
 public interface DiscussshangpinxinxiDao extends BaseMapper<DiscussshangpinxinxiEntity> {
 	

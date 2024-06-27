@@ -1,16 +1,7 @@
 <template>
   <div class="container">
     <el-alert title="确认支付前请先核对订单信息" type="success" :closable="false"></el-alert>
-    <!-- <div class="top-content">
-      <span>收款人</span>
-      <el-input style="width:300px" v-model="name" placeholder="收款人"></el-input>
-      <span style="margin-left:20px">收款账号</span>
-      <el-input style="width:300px" v-model="account" placeholder="收款账号"></el-input>
-    </div> -->
-    <!-- <div class="price-content">
-      <span>金额</span>
-      <span>￥99.0</span>
-    </div> -->
+
     <div class="pay-type-content">
       <div class="pay-type-item">
         <el-radio v-model="type" label="微信支付"></el-radio>

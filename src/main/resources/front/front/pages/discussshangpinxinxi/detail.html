@@ -58,7 +58,7 @@
 	.message-container {width: 100%}
 
 	.detail-tab .layui-tab-card>.layui-tab-title .layui-this {
-		background-color: rgba(38, 155, 158, 1);
+		background-color: #C2CFB2;
 		color: #fff;
 		font-size: 14px;
 	}
@@ -105,7 +105,7 @@ color: rgba(0, 112, 126, 1) !important;
 		
 				</div>
 				<div class="layui-col-md7" style="padding-left: 20px;flex: 1;" :style='{"padding":"0","boxShadow":"0 0 6px rgba(51, 140, 145, 1)","margin":"0 0 0 30px","borderColor":"rgba(194, 211, 211, 1)","backgroundColor":"#fff","borderRadius":"0","borderWidth":"1px","borderStyle":"solid"}'>
-					<h1 style="position: relative;" :style='{"padding":"10px 15px","boxShadow":"0 0 0px rgba(51, 140, 145, 1)","borderColor":"rgba(255, 255, 255, 0.3)","backgroundColor":"rgba(38, 155, 158, 1)","color":"rgba(255, 255, 255, 1)","borderRadius":"0","textAlign":"left","borderWidth":"0","fontSize":"20px","borderStyle":"solid"}' class="title">{{title}}</h1>
+					<h1 style="position: relative;" :style='{"padding":"10px 15px","boxShadow":"0 0 0px rgba(51, 140, 145, 1)","borderColor":"rgba(255, 255, 255, 0.3)","backgroundColor":"#C2CFB2","color":"rgba(255, 255, 255, 1)","borderRadius":"0","textAlign":"left","borderWidth":"0","fontSize":"20px","borderStyle":"solid"}' class="title">{{title}}</h1>
 					
 
 
@@ -146,18 +146,11 @@ color: rgba(0, 112, 126, 1) !important;
 			
 
 			<div class="layui-row detail-tab">
-				<div class="layui-tab layui-tab-card" :style='{"boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"rgba(38, 155, 158, 1)","backgroundColor":"#fff","borderRadius":"10px","borderStyle":"solid","borderWidth":"1px"}' style="overflow: hidden;">
+				<div class="layui-tab layui-tab-card" :style='{"boxShadow":"0 0 0px rgba(255,0,0,.3)","borderColor":"#C2CFB2","backgroundColor":"#fff","borderRadius":"10px","borderStyle":"solid","borderWidth":"1px"}' style="overflow: hidden;">
 
 					<ul class="layui-tab-title" :style='{"color":"rgba(38, 155, 158, 1)","backgroundColor":"#f2f2f2","fontSize":"14px"}'>
-						
-						
 
-						
 						<li>评论</li>
-						
-
-						
-						
 
 					</ul>
 
@@ -177,7 +170,7 @@ color: rgba(0, 112, 126, 1) !important;
 									</div>
 									<div class="layui-form-item">
 										<div class="layui-input-block">
-											<button :style='{"padding":"0 10px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(38, 155, 158, 1)","color":"#fff","borderRadius":"4px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="layui-btn btn-submit" lay-submit lay-filter="*">立即提交</button>
+											<button :style='{"padding":"0 10px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#C2CFB2","color":"#fff","borderRadius":"4px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' class="layui-btn btn-submit" lay-submit lay-filter="*">立即提交</button>
 											<button :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(0, 112, 126, 1)","margin":"10px 5px 0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"rgba(0, 112, 126, 1)","borderRadius":"4px","borderWidth":"0","width":"auto","lineHeight":"34px","fontSize":"14px","borderStyle":"solid"}' type="reset" class="layui-btn layui-btn-primary">重置</button>
 										</div>
 									</div>
@@ -189,12 +182,12 @@ color: rgba(0, 112, 126, 1) !important;
 											<span style="display: inline-block;" :style='{"padding":"0 10px","boxShadow":"0 0 6px rgba(51, 140, 145, 1)","margin":"0","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#fff","color":"#333","borderRadius":"4px","borderWidth":"0","width":"auto","lineHeight":"28px","fontSize":"14px","borderStyle":"solid"}' class="username">{{item.nickname}}</span>
 										</div>
 										<div class="content" style="margin: 0;flex: 1;">
-											<span style="display: inline-block;" :style='{"padding":"8px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"8px 0 0 50px","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(38, 155, 158, 1)","color":"#fff","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}' class="message">
+											<span style="display: inline-block;" :style='{"padding":"8px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"8px 0 0 50px","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#C2CFB2","color":"#fff","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}' class="message">
 												{{item.content}}
 											</span>
 										</div>
 										<div v-if="item.reply" class="content" style="margin: 0;flex: 1;">
-											<span style="display: inline-block;" :style='{"padding":"8px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"8px 0 0 50px","borderColor":"rgba(0,0,0,.3)","backgroundColor":"rgba(38, 155, 158, 1)","color":"#fff","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}' class="message">
+											<span style="display: inline-block;" :style='{"padding":"8px","boxShadow":"0 0 0px rgba(255,0,0,.3)","margin":"8px 0 0 50px","borderColor":"rgba(0,0,0,.3)","backgroundColor":"#C2CFB2","color":"#fff","borderRadius":"4px","borderWidth":"0","fontSize":"14px","borderStyle":"solid"}' class="message">
 												回复:{{item.reply}}
 											</span>
 										</div>

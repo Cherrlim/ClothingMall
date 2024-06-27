@@ -15,8 +15,7 @@ import com.entity.view.ChatView;
  * 在线客服
  *
  * @author 
- * @email 
- * @date 2021-04-10 12:28:04
+ * @email
  */
 public interface ChatService extends IService<ChatEntity> {
 

@@ -38,6 +38,9 @@ import com.utils.CommonUtil;
 
 /**
  * 尺码
+ * 后端接口
+ * @author 
+ * @email
  */
 @RestController
 @RequestMapping("/chima")

@@ -11,6 +11,12 @@ import org.apache.ibatis.annotations.Param;
 import com.entity.view.NewsView;
 
 
+/**
+ * 商品资讯
+ *
+ * @author 
+ * @email
+ */
 public interface NewsService extends IService<NewsEntity> {
 
     PageUtils queryPage(Map<String, Object> params);

@@ -13,6 +13,9 @@ import com.entity.view.YanseView;
 
 /**
  * 颜色
+ * 
+ * @author 
+ * @email
  */
 public interface YanseDao extends BaseMapper<YanseEntity> {
 	

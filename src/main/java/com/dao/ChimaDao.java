@@ -13,6 +13,9 @@ import com.entity.view.ChimaView;
 
 /**
  * 尺码
+ * 
+ * @author 
+ * @email
  */
 public interface ChimaDao extends BaseMapper<ChimaEntity> {
 	

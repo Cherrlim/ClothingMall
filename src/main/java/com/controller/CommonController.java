@@ -41,14 +41,14 @@ import com.utils.R;
 public class CommonController{
 	@Autowired
 	private CommonService commonService;
-	
+
 	@Autowired
 	private ConfigService configService;
-	
+
 	private static AipFace client = null;
-	
+
 	private static String BAIDU_DITU_AK = null;
-	
+
 	@RequestMapping("/location")
 	public R location(String lng,String lat) {
 		if(BAIDU_DITU_AK==null) {
@@ -60,8 +60,14 @@ public class CommonController{
 		Map<String, String> map = BaiduUtil.getCityByLonLat(BAIDU_DITU_AK, lng, lat);
 		return R.ok().put("data", map);
 	}
-	
 
+	/**
+	 * 人脸比对
+	 *
+	 * @param face1 人脸1
+	 * @param face2 人脸2
+	 * @return
+	 */
 	@RequestMapping("/matchFace")
 	public R matchFace(String face1, String face2) {
 		if(client==null) {
@@ -94,10 +100,10 @@ public class CommonController{
 			return R.error("文件不存在");
 		} catch (IOException e) {
 			e.printStackTrace();
-		} 
+		}
 		return R.ok().put("data", com.alibaba.fastjson.JSONObject.parse(res.get("result").toString()));
 	}
-    
+
 	/**
 	 * 获取table表中的column列表(联动接口)
 	 * @param table
@@ -119,7 +125,7 @@ public class CommonController{
 		List<String> data = commonService.getOption(params);
 		return R.ok().put("data", data);
 	}
-	
+
 	/**
 	 * 根据table中的column获取单条记录
 	 * @param table
@@ -136,7 +142,7 @@ public class CommonController{
 		Map<String, Object> result = commonService.getFollowByOption(params);
 		return R.ok().put("data", result);
 	}
-	
+
 	/**
 	 * 修改table表的sfsh状态
 	 * @param table
@@ -149,7 +155,7 @@ public class CommonController{
 		commonService.sh(map);
 		return R.ok();
 	}
-	
+
 	/**
 	 * 获取需要提醒的记录数
 	 * @param tableName
@@ -160,12 +166,12 @@ public class CommonController{
 	 */
 	@IgnoreAuth
 	@RequestMapping("/remind/{tableName}/{columnName}/{type}")
-	public R remindCount(@PathVariable("tableName") String tableName, @PathVariable("columnName") String columnName, 
+	public R remindCount(@PathVariable("tableName") String tableName, @PathVariable("columnName") String columnName,
 						 @PathVariable("type") String type,@RequestParam Map<String, Object> map) {
 		map.put("table", tableName);
 		map.put("column", columnName);
 		map.put("type", type);
-		
+
 		if(type.equals("2")) {
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 			Calendar c = Calendar.getInstance();
@@ -173,7 +179,7 @@ public class CommonController{
 			Date remindEndDate = null;
 			if(map.get("remindstart")!=null) {
 				Integer remindStart = Integer.parseInt(map.get("remindstart").toString());
-				c.setTime(new Date()); 
+				c.setTime(new Date());
 				c.add(Calendar.DAY_OF_MONTH,remindStart);
 				remindStartDate = c.getTime();
 				map.put("remindstart", sdf.format(remindStartDate));
@@ -186,11 +192,11 @@ public class CommonController{
 				map.put("remindend", sdf.format(remindEndDate));
 			}
 		}
-		
+
 		int count = commonService.remindCount(map);
 		return R.ok().put("count", count);
 	}
-	
+
 	/**
 	 * 单列求和
 	 */
@@ -203,7 +209,7 @@ public class CommonController{
 		Map<String, Object> result = commonService.selectCal(params);
 		return R.ok().put("data", result);
 	}
-	
+
 	/**
 	 * 分组统计
 	 */
@@ -224,7 +230,7 @@ public class CommonController{
 		}
 		return R.ok().put("data", result);
 	}
-	
+
 	/**
 	 * （按值统计）
 	 */
@@ -246,5 +252,5 @@ public class CommonController{
 		}
 		return R.ok().put("data", result);
 	}
-	
+
 }

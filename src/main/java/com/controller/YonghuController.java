@@ -36,7 +36,12 @@ import com.utils.MPUtil;
 import com.utils.CommonUtil;
 
 
-
+/**
+ * 用户
+ * 后端接口
+ * @author 
+ * @email
+ */
 @RestController
 @RequestMapping("/yonghu")
 public class YonghuController {

@@ -38,12 +38,17 @@ import com.utils.CommonUtil;
 
 /**
  * 颜色
+ * 后端接口
+ * @author 
+ * @email
  */
 @RestController
 @RequestMapping("/yanse")
 public class YanseController {
     @Autowired
     private YanseService yanseService;
+    
+
 
     /**
      * 后端列表
@@ -105,6 +110,9 @@ public class YanseController {
         YanseEntity yanse = yanseService.selectById(id);
         return R.ok().put("data", yanse);
     }
+    
+
+
 
     /**
      * 后端保存
@@ -185,6 +193,7 @@ public class YanseController {
 		if(map.get("remindend")!=null) {
 			wrapper.le(columnName, map.get("remindend"));
 		}
+
 
 		int count = yanseService.selectCount(wrapper);
 		return R.ok().put("count", count);

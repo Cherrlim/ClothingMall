@@ -349,8 +349,8 @@
 	transition: all 0.5s;
 }
 .list_btn_l_r:hover {
-	color: #8c8573;
-	border-color: #8c8573;
+	/*color: #8c8573;*/
+	/*border-color: #8c8573;*/
 }
 .list_btn_line {
 	float: left;

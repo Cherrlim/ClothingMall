@@ -2,41 +2,18 @@
   <div>
     <div class="container">
       <div class="login-form" style="backgroundColor:rgba(208, 163, 140, 0.53);borderRadius:10px">
-        <h1 class="h1" style="color:rgba(255, 255, 255, 1);fontSize:28px;">衣依服装销售平台注册</h1>
+        <h1 class="h1" style="color:rgba(255, 255, 255, 1);fontSize:28px;">服装销售平台注册</h1>
 		<el-form ref="rgsForm" class="rgs-form" :model="rgsForm" label-width="120px">
-			<!-- <div v-if="tableName=='yonghu'" class="input-group">
-			   <div class="label">用户名</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.yonghuming" class="input" type="text" placeholder="用户名">
-			   </div>
-			 </div> -->
+
 			<el-form-item label="用户名" class="input" v-if="tableName=='yonghu'">
 			  <el-input v-model="ruleForm.yonghuming" autocomplete="off" placeholder="用户名"  />
 			</el-form-item>
-			<!-- <div v-if="tableName=='yonghu'" class="input-group">
-			   <div class="label">密码</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.mima" class="input" type="text" placeholder="密码">
-			   </div>
-			 </div> -->
 			<el-form-item label="密码" class="input" v-if="tableName=='yonghu'">
 			  <el-input v-model="ruleForm.mima" autocomplete="off" placeholder="密码" type="password"#elsetype="text" />
 			</el-form-item>
-			<!-- <div v-if="tableName=='yonghu'" class="input-group">
-			   <div class="label">姓名</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.xingming" class="input" type="text" placeholder="姓名">
-			   </div>
-			 </div> -->
 			<el-form-item label="姓名" class="input" v-if="tableName=='yonghu'">
 			  <el-input v-model="ruleForm.xingming" autocomplete="off" placeholder="姓名"  />
 			</el-form-item>
-			<!-- <div v-if="tableName=='yonghu'" class="input-group">
-			   <div class="label">联系电话</div>
-			   <div class="input-container">
-			     <input v-model="ruleForm.lianxidianhua" class="input" type="text" placeholder="联系电话">
-			   </div>
-			 </div> -->
 			<el-form-item label="联系电话" class="input" v-if="tableName=='yonghu'">
 			  <el-input v-model="ruleForm.lianxidianhua" autocomplete="off" placeholder="联系电话"  />
 			</el-form-item>
@@ -46,11 +23,6 @@
 			</div>
 		</el-form>
       </div>
-      <!-- <div class="nk-navigation">
-        <a href="#">
-          <div @click="login()">注册</div>
-        </a>
-      </div> -->
     </div>
   </div>
 </template>
@@ -275,7 +247,6 @@ export default {
 	}
 	
 	.container {
-		background-image: url("http://codegen.caihongy.cn/20210221/3f66c275196a42b49807a143d3ca3b83.jpg");
 		height: 100vh;
 		background-position: center center;
 		background-size: cover;

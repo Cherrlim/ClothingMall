@@ -3,6 +3,7 @@
 
 <mapper namespace="com.dao.YanseDao">
 
+	<!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.entity.YanseEntity" id="yanseMap">
         <result property="yanse" column="yanse"/>
     </resultMap>

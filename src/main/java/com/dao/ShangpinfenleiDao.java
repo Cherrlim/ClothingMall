@@ -11,6 +11,12 @@ import com.entity.vo.ShangpinfenleiVO;
 import com.entity.view.ShangpinfenleiView;
 
 
+/**
+ * 商品分类
+ * 
+ * @author 
+ * @email
+ */
 public interface ShangpinfenleiDao extends BaseMapper<ShangpinfenleiEntity> {
 	
 	List<ShangpinfenleiVO> selectListVO(@Param("ew") Wrapper<ShangpinfenleiEntity> wrapper);

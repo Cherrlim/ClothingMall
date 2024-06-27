@@ -3,6 +3,7 @@
 
 <mapper namespace="com.dao.DiscussshangpinxinxiDao">
 
+	<!-- 可根据自己的需求，是否要使用 -->
     <resultMap type="com.entity.DiscussshangpinxinxiEntity" id="discussshangpinxinxiMap">
         <result property="refid" column="refid"/>
         <result property="userid" column="userid"/>

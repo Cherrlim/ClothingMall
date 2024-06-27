@@ -36,6 +36,12 @@ import com.utils.MPUtil;
 import com.utils.CommonUtil;
 
 
+/**
+ * 商品分类
+ * 后端接口
+ * @author 
+ * @email
+ */
 @RestController
 @RequestMapping("/shangpinfenlei")
 public class ShangpinfenleiController {

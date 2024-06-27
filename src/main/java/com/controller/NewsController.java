@@ -36,7 +36,12 @@ import com.utils.MPUtil;
 import com.utils.CommonUtil;
 
 
-
+/**
+ * 商品资讯
+ * 后端接口
+ * @author 
+ * @email
+ */
 @RestController
 @RequestMapping("/news")
 public class NewsController {

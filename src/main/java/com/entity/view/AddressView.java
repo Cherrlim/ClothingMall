@@ -12,7 +12,9 @@ import java.io.Serializable;
 /**
  * 地址
  * 后端返回视图实体辅助类   
-
+ * （通常后端关联的表或者自定义的字段需要返回使用）
+ * @author 
+ * @email
  */
 @TableName("address")
 public class AddressView  extends AddressEntity implements Serializable {

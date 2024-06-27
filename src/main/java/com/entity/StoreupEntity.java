@@ -24,6 +24,8 @@ import com.baomidou.mybatisplus.enums.IdType;
 /**
  * 收藏表
  * 数据库通用操作实体类（普通增删改查）
+ * @author 
+ * @email
  */
 @TableName("storeup")
 public class StoreupEntity<T> implements Serializable {

@@ -14,6 +14,8 @@ import java.io.Serializable;
  * 收藏表
  * 手机端接口返回实体辅助类 
  * （主要作用去除一些不必要的字段）
+ * @author 
+ * @email
  */
 public class StoreupVO  implements Serializable {
 	private static final long serialVersionUID = 1L;

@@ -11,7 +11,12 @@ import com.entity.vo.NewsVO;
 import com.entity.view.NewsView;
 
 
-
+/**
+ * 商品资讯
+ * 
+ * @author 
+ * @email
+ */
 public interface NewsDao extends BaseMapper<NewsEntity> {
 	
 	List<NewsVO> selectListVO(@Param("ew") Wrapper<NewsEntity> wrapper);
